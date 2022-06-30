@@ -1,0 +1,137 @@
+.pageHeader {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  position: sticky;
+  background-color: #fff;
+  filter: opacity(0.87);
+  backdrop-filter: blur(8px);
+  top: 0;
+  z-index: 1;
+}
+
+.profileHeader {
+  min-height: 400px;
+  border-bottom: 1px solid darken(#fff, 20%);
+}
+
+.profileBackground {
+  height: 200px;
+  background-color: darken(#fff, 10%);
+}
+
+.userDescription {
+  padding: 0 30px;
+
+  & > div:first-child {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  & :global(.MuiAvatar-root) {
+    width: 150px;
+    height: 150px;
+    margin-top: -75px;
+  }
+
+  & :global(#followBtn) {
+    color: #e3e3e3;
+    height: 30px;
+    width: 120px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: black;
+    text-transform: none;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+
+  & :global(#followingBtn) {
+    height: 30px;
+    width: 120px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: gray 1px solid;
+    color: black;
+    text-transform: none;
+
+    &:hover {
+      background-color: lighten(red, 45%);
+      color: red;
+      border-color: lighten(red, 35%);
+
+      & span {
+        display: none;
+      }
+
+      &:after {
+        content: "Unfollow";
+      }
+    }
+  }
+}
+
+.name {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.follows {
+  font-size: 18px;
+  color: gray;
+
+  & span:first-of-type {
+    margin-right: 15px;
+  }
+
+  & span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  border-bottom: 1px solid darken(#fff, 20%);
+  box-sizing: border-box;
+
+
+  & :global(.MuiBox-root) {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+    &:global(.active) {
+      color: rgb(29, 161, 242);
+      border-bottom: 5px solid rgb(29, 161, 242);
+    }
+
+    &:hover {
+      background-color: darken(#fff, 10%);
+    }
+  }
+}
+
+.empty {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: gray;
+}

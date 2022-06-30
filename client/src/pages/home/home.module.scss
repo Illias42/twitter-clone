@@ -1,0 +1,22 @@
+.tweetsWrapper {
+  height: 100%;
+}
+
+.tweetsHeader {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  filter: opacity(0.87);
+  backdrop-filter: blur(8px);
+}
+
+.loader {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

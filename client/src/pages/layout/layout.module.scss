@@ -1,0 +1,81 @@
+.leftSide {
+  position: sticky;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  height: 100vh;
+  border-right: 1px solid darken(#fff, 20%);
+}
+
+.rightSide {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  border-left: 1px solid darken(#fff, 20%);
+}
+
+.menuList {
+  position: fixed;
+
+}
+
+.listItem {
+  justify-content: center!important;
+}
+
+.userOptions {
+  position: fixed;
+  bottom: 0;
+  margin-right: 10px;
+
+  & span div {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+.trendsTitle {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.trendsContainer {
+  position: fixed;
+  width: 240px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 80px;
+  margin-left: 20px;
+  background-color: darken(#ffffff, 3%)
+}
+
+.trendsList {
+
+}
+
+.trend {
+  cursor: pointer;
+  border-radius: 0;
+  padding: 10px;
+  background-color: darken(#ffffff, 3%);
+
+  &:hover {
+    background-color: darken(#ffffff, 6%);
+  }
+}
+
+.searchField {
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 20px;
+  background-color: darken(#ffffff, 5%);
+  border-radius: 17px;
+  width: 240px;
+  font-size: 14px;
+
+  & fieldset {
+    border-radius: 17px;
+  }
+}

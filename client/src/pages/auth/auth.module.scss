@@ -1,0 +1,66 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.blueSide {
+  background-color: #6fbefa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  & h6 {
+    color: white;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+.blueSideBackgroundIcon {
+  position: absolute;
+  top: -80%;
+  left: -50%;
+  width: 250%;
+  height: 250%;
+}
+
+.blueSideListInfo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+.blueSideListInfoIcons {
+  font-size: 32px;
+  margin-right: 15px;
+}
+
+.loginSide {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.loginSideTwitterIcon {
+  font-size: 50px;
+}
+
+.loginSideWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  width: 380px;
+}
+
+.loginSideTitle {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 45px;
+}

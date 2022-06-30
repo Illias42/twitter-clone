@@ -1,0 +1,48 @@
+.tweetsWrapper {
+  height: 100%;
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.tweetsHeader {
+  border-radius: 0;
+  border: 0;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  filter: opacity(0.87);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.replyForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  border-top: 2px solid darken(#fff, 0.07);
+
+  & .MuiAvatar-root {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+.textarea {
+  border: none;
+  resize: none;
+  width: 75%;
+  outline: none;
+  margin: 0 20px;
+  font-size: 16px;
+  background-color: darken(#fff, 0.07);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.replies {
+  min-height: 500px;
+}

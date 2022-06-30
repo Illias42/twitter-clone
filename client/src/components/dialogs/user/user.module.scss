@@ -1,0 +1,40 @@
+.title {
+  width: 300px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.user {
+  display: flex;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: 700;
+
+  & span {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 5px;
+    color: gray;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: hsla(0, 110%, 0, 50%);
+  z-index: 2;
+}
+
+.container {
+  box-shadow: 4px 4px 15px 15px rgba(34, 60, 80, 0.2);
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  z-index: 3;
+}

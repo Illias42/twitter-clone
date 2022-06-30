@@ -1,0 +1,51 @@
+.tweet {
+  transition: all 0.4s;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(245, 248, 258);
+  }
+}
+
+.tweetsUserName {
+  color: gray;
+}
+
+.tweetButtons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+
+  & button {
+    font-size: 14px;
+  }
+}
+
+.navArrow {
+  filter: opacity(0.4);
+  transition: filter 0.4s;
+
+  &:hover {
+    filter: opacity(1)
+  }
+}
+
+
+.pictures {
+  display: flex;
+  align-items: center;
+  width: 98%;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  & img {
+    width: 100%;
+    height: auto;
+    display: none;
+    max-height: 700px;
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,116 @@
+.wrapper {
+  height: 100%;
+  border-radius: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.header {
+  border-radius: 0;
+  border: 0;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  filter: opacity(0.87);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  border-bottom: 1px solid darken(#fff, 20%);
+  box-sizing: border-box;
+
+
+  & :global(.MuiBox-root) {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:global(.active) {
+      color: rgb(29, 161, 242);
+      border-bottom: 5px solid rgb(29, 161, 242);
+    }
+
+    &:hover {
+      background-color: darken(#fff, 10%);
+    }
+  }
+}
+
+.user {
+  display: flex;
+  padding: 15px 20px;
+  transition: all 0.5s;
+
+  div:first-child {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: darken(#fff, 5%);
+  }
+
+
+
+  & :global(#followBtn) {
+    height: 30px;
+    width: 120px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: black;
+    text-transform: none;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+
+  & :global(#followingBtn) {
+    height: 30px;
+    width: 120px;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: gray 1px solid;
+    color: black;
+    text-transform: none;
+
+    &:hover {
+      background-color: lighten(red, 45%);
+      color: red;
+      border-color: lighten(red, 35%);
+
+      & span {
+        display: none;
+      }
+
+      &:after {
+        content: "Unfollow";
+      }
+    }
+  }
+}
+
+.content {
+  flex: 1;
+  font-size: 18px;
+  font-weight: bold;
+
+  & span {
+    color: gray;
+    margin-left: 5px;
+    font-weight: 400;
+  }
+}
