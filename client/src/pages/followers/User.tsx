@@ -2,7 +2,6 @@ import {IUser, IUserData} from "../../redux/user/contracts/user";
 import Box from "@material-ui/core/Box";
 import styles from "./followers.module.scss";
 import Avatar from "@material-ui/core/Avatar";
-import Typography from "@material-ui/core/Typography";
 import {useNavigate} from "react-router-dom";
 import Button from "@mui/material/Button";
 import axios from "../../utils/axios";
@@ -35,7 +34,7 @@ const User = ({_id, name, avatar}: IUser) => {
     }
 
     return <Box className={styles.user} onClick={toProfile}>
-        <Avatar src={`http://localhost:8000/images/avatars/${avatar}`}/>
+        <Avatar src={avatar}/>
         <Box className={styles.content}>
             {name}<span>@{name}</span>
         </Box>

@@ -111,7 +111,7 @@ const Layout: React.FC = ({children}) => {
                     </List>
 
                     <IconButton className={styles.userOptions} onClick={() => setModalOpen("User")}>
-                        <Avatar src={`http://localhost:8000/images/avatars/${user.avatar}`}/>
+                        <Avatar src={user.avatar}/>
                     </IconButton>
 
                 </Grid>

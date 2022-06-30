@@ -53,7 +53,7 @@ const TweetPage: React.FC = (): React.ReactElement => {
                     />
                         <Paper className={styles.replyForm}>
                             <Avatar
-                                src={`http://localhost:8000/images/avatars/${user.avatar}`}
+                                src={user.avatar}
                                 alt="User avatar"
                             />
                             <TextareaAutosize

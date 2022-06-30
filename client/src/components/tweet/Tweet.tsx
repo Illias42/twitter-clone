@@ -91,10 +91,10 @@ export const Tweet: React.FC<TweetProps> = ({tweet}: TweetProps): React.ReactEle
                         e.stopPropagation();
                         navigator(`/profile/${tweet.user._id}`);
                     }}>
-                        <Avatar src={`http://localhost:8000/images/avatars/${tweet.user.avatar}`} alt="User avatar"/>
+                        <Avatar src={tweet.user.avatar} alt="User avatar"/>
                     </IconButton>
                 </Grid>
-                <Grid style={{paddingLeft: 10}} item xs={11}>
+                <Grid style={{paddingLeft: 20, paddingTop: 5}} item xs={11}>
                     <Typography>
                         <b>{tweet.user.name}</b> <span
                         className={styles.tweetsUserName}>@{tweet.user.name} · 18 год</span>
@@ -103,8 +103,7 @@ export const Tweet: React.FC<TweetProps> = ({tweet}: TweetProps): React.ReactEle
                         {tweet.text}
                     </Typography>
                 </Grid>
-                <Grid style={{paddingLeft: 60}} item xs={12}>
-
+                <Grid style={{paddingLeft: 70}} item xs={12}>
                     <Box className={styles.pictures}>
                         {tweet.pics.length > 0 && <>
                             <IconButton className={styles.navArrow} style={{marginRight: -48}} onClick={prevPicture}
@@ -115,7 +114,7 @@ export const Tweet: React.FC<TweetProps> = ({tweet}: TweetProps): React.ReactEle
                                 <img
                                     key={`${tweet._id}-${index}`}
                                     style={index === counter ? {display: "block"} : {}}
-                                    src={`http://localhost:8000/images/${pic}`}
+                                    src={pic}
                                 />
                             ))
                             }

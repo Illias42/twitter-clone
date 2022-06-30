@@ -48,7 +48,7 @@ const CreateTweetDialog: React.FC<ModalProps> = ({open, close, onClose}) => {
                         onClick={(e: any) => e.stopPropagation()}
                     >
                         <Box className={styles.content}>
-                            <Avatar src={`http://localhost:8000/images/avatars/${user.avatar}`}/>
+                            <Avatar src={user.avatar}/>
                             <TextareaAutosize
                                 className={styles.textArea}
                                 minRows={4}

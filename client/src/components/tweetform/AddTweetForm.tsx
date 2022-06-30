@@ -52,8 +52,8 @@ export const AddTweetForm: React.FC = (): React.ReactElement => {
             <Grid container className={styles.container}>
                 <Grid item xs={1}>
                     <Avatar
-                        style={{marginLeft: '20px'}}
-                        src={`http://localhost:8000/images/avatars/${user.avatar}`}
+                        style={{marginLeft: '10px'}}
+                        src={user.avatar}
                         alt="User avatar"
                     />
                 </Grid>

@@ -16,7 +16,7 @@ export const Reply: React.FC<ReplyProps> = (props: ReplyProps): React.ReactEleme
     return (
         <Paper className={styles.container}>
             <Avatar
-                src={`http://localhost:8000/images/avatars/${props.user.avatar}`}
+                src={props.user.avatar}
                 alt="User avatar"
             />
             <Box className={styles.content}>

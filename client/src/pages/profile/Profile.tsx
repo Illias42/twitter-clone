@@ -67,7 +67,7 @@ const Profile = () => {
                 <Box className={styles.profileBackground}/>
                 <Box className={styles.userDescription}>
                     <Box>
-                        <Avatar src={`http://localhost:8000/images/avatars/${userData.avatar}`}/>
+                        <Avatar src={userData.avatar}/>
                         {!isMyProfile && <>
                             {user.followings.includes(id as string) ?
                                 <Button onClick={unfollow} id="followingBtn"

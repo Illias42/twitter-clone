@@ -41,7 +41,7 @@ const UserDialog: React.FC<ModalProps> = ({open, onClose}) => {
                         onClick={(e: any) => e.stopPropagation()}
                     >
                         <div className={styles.title}>
-                            <Avatar src={`http://localhost:8000/images/avatars/${user.avatar}`}/>
+                            <Avatar src={user.avatar}/>
                             <div className={styles.user}>
                                 {user.name}
                                 <span>@{user.name}</span>
