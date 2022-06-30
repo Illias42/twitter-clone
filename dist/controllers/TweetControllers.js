@@ -16,7 +16,6 @@ export default {
             try {
                 const { text, userId } = req.body;
                 const pics = [];
-                console.log(req.files);
                 Array.from(req.files).forEach(pic => {
                     // @ts-ignore
                     pics.push(pic.location);
